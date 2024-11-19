@@ -2,11 +2,11 @@
 
 public class Equipment
 {
-    public string Tools { get; set; }
-    public string Armor { get; set; }
-    public string Elixirs { get; set; }
-    
-    public Equipment(string tools, string armor, string elixirs)
+    public Inventory<Tool> Tools { get; set; }
+    public Inventory<Armor> Armor { get; set; }
+    public Inventory<Elixir> Elixirs { get; set; }
+
+    public Equipment(Inventory<Tool> tools, Inventory<Armor> armor, Inventory<Elixir> elixirs)
     {
         Tools = tools;
         Armor = armor;
